@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+		<script src="../src/main.js"></script>
+		<script src="../src/databusEvent.js"></script>
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<title>Databus Event</title>
+	</head>
+	<body>
+		<div id="app">
+			<div id="trigger-layout">
+				<h3>Trigger Layout</h3>
+				<label>Event Name</label><input id="trigger-event-name-text" type="text"></input>
+				<div id="arguments-event">
+					<p>Argumentos</p>
+					<label>Key</label><input id="event-arg-key" type="text"></input>
+					<label>Value</label><input id="event-arg-value" type="text"></input>
+				</div>
+				<p id="arguments-event-buttons">
+					<input id="trigger" type="button" value="Trigger"/>
+				</p>
+			</div>
+			<div id="listen-layout">
+				<h3>Listen Layout</h3>
+				<label>Event Name</label><input id="listen-event-name-text" type="text"></input>
+				<input id="listen" type="button" value="Listen"/>
+			</div>
+			<div id="callback-layout">
+				<h3>Callback Layout</h3>
+				<p id="callback-text"></p>
+			</div>
+		</div>
+	</body>
+</html>
